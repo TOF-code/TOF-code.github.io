@@ -434,3 +434,204 @@ footer .copyright {
     font-size: .625rem;
   }
 }
+
+/* paintwork page */
+
+#paintwork {
+  max-width: 100%;
+  background-color: #272416;  
+}
+
+.paintinggrid {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(32, 120px) / repeat(24, 1fr);
+  grid-row-gap: 50px;
+
+}
+
+.subGrid h2 {
+  border-left: 1px solid black;
+  padding: 2px;
+}
+
+#buenHombre {
+  grid-area: 2 / 2 / 5 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#buenHombre img {
+  grid-area: 2 / 8 / 6 / 17;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#buenHombre h2 {
+  grid-area: 5 / 2 / 6 / 5;
+}
+
+#laLaguna {
+  grid-area: 5 / 2 / 8 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#laLaguna img {
+  grid-area: 2 / 2 / 6 / 12;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#laLaguna h2 {
+  grid-area: 2 / 13 / 6 / 17;
+}
+
+#changeOfSeason {
+  grid-area: 8 / 2 / 11 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#changeOfSeason img {
+  grid-area: 2 / 8 / 6 / 17;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#changeOfSeason h2 {
+  grid-area: 5 / 2 / 6 / 5;
+}
+
+#stormInJapan {
+  grid-area: 11 / 2 / 14 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#stormInJapan img {
+  grid-area: 2 / 2 / 6 / 12;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#stormInJapan h2 {
+  grid-area: 2 / 13 / 6 / 17;
+}
+
+#oceanEye {
+  grid-area: 14 / 2 / 17 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#oceanEye img {
+  grid-area: 2 / 8 / 6 / 17;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#oceanEye h2 {
+  grid-area: 5 / 2 / 6 / 5;
+} 
+
+#origin {
+  grid-area: 17 / 2 / 20 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#origin  img {
+  grid-area: 2 / 2 / 6 / 12;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#origin h2 {
+  grid-area: 2 / 13 / 6 / 17;
+}
+
+#seeds {
+  grid-area: 20 / 2 / 23 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#seeds img {
+  grid-area: 2 / 8 / 6 / 17;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#seeds h2 {
+  grid-area: 5 / 2 / 6 / 5;
+} 
+
+#sateliteDrone {
+  grid-area: 23 / 2 / 26 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#sateliteDrone  img {
+  grid-area: 2 / 2 / 6 / 12;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#sateliteDrone h2 {
+  grid-area: 2 / 13 / 6 / 17;
+}
+
+#crossTheOcean {
+  grid-area: 26 / 2 / 29 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#crossTheOcean img {
+  grid-area: 2 / 8 / 6 / 17;
+  max-width: 80%;
+  max-height: 70%
+}
+
+#crossTheOcean h2 {
+  grid-area: 5 / 2 / 6 / 5;
+} 
+
+#greenland {
+  grid-area: 29 / 2 / 32 / 24;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(16, 1fr);
+  align-items: end;
+}
+
+#greenland  img {
+  grid-area: 2 / 2 / 6 / 12;
+  max-width: 100%;
+  max-height: 75%
+}
+
+#greenland h2 {
+  grid-area: 2 / 13 / 6 / 17;
+}
+
