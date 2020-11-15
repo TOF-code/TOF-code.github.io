@@ -589,7 +589,7 @@ footer .copyright {
   align-items: end;
 }
 
-#sateliteDrone  img {
+#sateliteDrone img {
   grid-area: 2 / 2 / 6 / 12;
   max-width: 80%;
   max-height: 70%
