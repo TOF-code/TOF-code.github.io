@@ -127,14 +127,14 @@ header .mobile {
   }
 }
 
-/* Sign Up Section */
+/* banner section */
 
 .banner {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 27rem;  
-  background-: url('./images LL/banner Liemur Lissa.png');
+  background-image: url('./images LL/banner Liemur Lissa copy.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -366,6 +366,7 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  display: none;
 }
 
 #quotes-section .content {
