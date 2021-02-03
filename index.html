@@ -7,6 +7,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>ti-co</title>
 </head>
 
@@ -14,15 +15,16 @@
 
 <body>
   <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid mb-0" style="background:url(./resources/v627-aew-21-technologybackground_1.jpg) no-repeat; background-size: cover; padding: 20%">
+  <div class="jumbotron jumbotron-fluid mb-0" style="background:url(./resources/v627-aew-21-technologybackground_1.jpg) no-repeat; background-size: cover; padding: 18%">
     <div class="text-white text-center my-5">
       <h1 id="animation" class="display-5">Hi, and Welcome to my Portfolio!</h1>
       <p>I'm Kristof Welslau. I'm a Web developer.</p>
+      <i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i>
     </div> 
   </div>
   
   <!-- Navbar Component -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #000028; display:fixed">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #000028; display:fixed; border-bottom: solid; border-bottom-color:hsla(347, 93%, 35%, 0.822)">
     <a class="navbar-brand" href="#">
       ti-co
     </a>
@@ -111,7 +113,11 @@
   <div class="container-fluid" style="background-color: #000028">
     <div class="row" >
       <div class="col">
-        <h2 class="display-5 text-white text-center">Contact</h2>
+        <br>
+        <h2 class="display-4 text-white text-center">Contact</h2>
+        <br>
+        <h3 class="text-center display-5" style="color: rgba(172, 6, 42, 0.822)">Have a question or want to work together?</h3>
+        <br>
       </div>
     </div>
 
@@ -122,13 +128,46 @@
           method="POST"
         >
           <div class="form-row my-2">
-            <input type="email" class="form-control" name="_replyto" id="inputEmail4" placeholder="enter your e-mail">
+            <input 
+              style="background-color: hsl(240, 16%, 18%); color:white;" 
+              type="name" 
+              minlength=10 
+              class="form-control" 
+              name="name" 
+              id="inputName" 
+              placeholder="Your name" 
+              required 
+            />
           </div>
           <div class="form-row my-2">
-            <textarea class="form-control" name="message" placeholder="write your message here"></textarea>
+            <input 
+              style="background-color: hsl(240, 16%, 18%); color:white;"
+              type="email" 
+              class="form-control" 
+              name="_replyto" 
+              id="inputEmail4" 
+              placeholder="Your e-mail" 
+              required 
+            />
           </div>
           <div class="form-row my-2">
-            <button class="btn-primary form-control rounded text-center text-white" style="border-radius: 2" type="submit">Send</button>  
+            <textarea
+              style="background-color: hsl(240, 16%, 18%); color:white;" 
+              class="form-control" 
+              rows=6 
+              minlength=100 
+              maxlength=500 
+              name="message" 
+              placeholder="write your message here" 
+              required>
+            </textarea>
+          </div>
+          <div class="form-row mt-2 mb-5">
+            <button 
+              class="form-control rounded text-center text-white" 
+              style="border-radius: 2; border:solid; border-color: rgba(172, 6, 42, 0.822); background-color: hsl(240, 16%, 18%);" 
+              type="submit"
+            >Send Message</button>  
           </div>
            
         </form>  
@@ -138,7 +177,7 @@
 
   
   <!-- Footer -->
-  <footer class="text-center" style="background-color: rgba(114, 116, 129, 0.527)">2021 ti-co &copy;</footer>
+  <footer class="text-center text-white" style="background-color:hsl(240, 16%, 18%)">2021 ti-co &copy;</footer>
 
   <!-- Bootstrap's JavaScript Files -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
