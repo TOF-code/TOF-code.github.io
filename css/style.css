@@ -1,0 +1,8 @@
+#animation { 
+    animation: textAppear 4s;
+}
+
+@keyframes textAppear {
+    from {visibility: hidden;}
+    to {visibility: visible;}
+}
