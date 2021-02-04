@@ -25,7 +25,7 @@
   
   <!-- Navbar Component -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #000028; display:fixed; border-bottom: solid; border-bottom-color:#FFDB58">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand ml-2" href="#">
       <span style="color: #FFDB58" >ti-co</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +34,13 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item ml-2 active">
           <a class="nav-link" href="#">About me<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item ml-4">
+        <li class="nav-item ml-2">
           <a class="nav-link" href="#">Portfolio</a>
         </li>
-        <li class="nav-item ml-4">
+        <li class="nav-item ml-2">
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
@@ -49,33 +49,10 @@
 
   <!-- Container -->
   <div class="container">
-    <!-- About section -->
-
-    <div class="row mt-4">
-      <div class="col">
-        <h2 class="display-4 text-center" style="color: hsl(240, 16%, 18%)">About me</h2>
-      </div>
-    </div>
-
-    <div class="row mt-2" style='color: #000028'>
-      <div class="col-8 my-3">
-        <p>Hi there, I'm a web developer.</p>
-        <p>I enjoy the logic of programming as much as the creativity of designing dynamic and intuitive user experiences. I have recently re-trained myself in web development and I simply love it. So I'm eager to gain experience, learn more and progress towards a full-stack developer.</p>
-        <p>I'm currently focusing on JavaScript, SASS, Bootstrap, React, and other frameworks. I'll probably choose to take direction .net, but maybe you will come up with a reason to change my mind?</p>
-        <p>I'm open to all types of collaborations!</p>
-      </div>
-
-      <div class="col-4 my-3 ">
-        <img src="./resources/aboutMe.jpg"/>  
-      </div>
-    </div>
-    
-    <hr style="border-top: 1px solid hsl(240, 16%, 18%)">
-
     <!-- section featered projects -->
-    <div class="row">
+    <div class="row mt-5">
       <div class="col">
-        <h2 class="display-4 text-center" style="color: hsl(240, 16%, 18%)">Recent Projects</h2>
+        <h2 class="display-4 text-center" style="color: hsl(240, 16%, 18%)">Recent <span>Projects</span></h2>
       </div>
     </div>
 
@@ -102,14 +79,13 @@
       </div>
     </div>
 
-
     <div class="row justify-content-center mb-5">  
       <div class="col-10 col-md-6 mt-5">
         <!-- Third card goes here -->
          <div class="card">
            <img src="./resources/adhoc_1.jpg" class="card-img-top" alt="experienced icon">
            <div class="card-body">
-             <p class="card-text" style="color: #000028">Ad-hoc offers an on-demand administrative service. I created a responsive website for them with Bootstrap.</p>
+             <p class="card-text" style="color: #000028">Ad-hoc offers an on-demand administrative service. I created a responsive website for them.</p>
            </div>
          </div>
        </div>
@@ -124,22 +100,53 @@
         </div>
       </div>
     </div>
-    <br>
-  </div>
+    <hr style="border-top: 1px solid hsl(240, 16%, 18%)">
   
+  
+  <!-- About section -->
+  
+    <div class="row justify-content-center mt-4">
+      <div class="col">
+        <h2 class="text-center display-4" 
+            style="color: hsl(240, 16%, 18%)"
+        >About me</h2>
+      </div>
+    </div>
+  
+    <div class="row mt-2 justify-content-center" style='color: #000028;'>
+      <div class="col-9 col-md-6 my-3">
+        <p style="text-align: justify;">
+          As a developer I enjoy the logic of programming as much as the creativity of designing dynamic and intuitive user experiences.
+          <br>
+          <br>
+          I have recently re-trained myself in web development and I simply love it. So I'm eager to gain experience, learn more and progress towards a full-stack developer. I'm currently focusing on JavaScript, SASS, Bootstrap, React, and other frameworks. I'll probably take direction .net, unless you change my mind?
+        </p>
+      </div>
+  
+      <div class="col-11 col-md-4 my-3" style="text-align: justify;">
+        <img src="./resources/aboutMe.jpg"/>  
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid" style="background-color: #000028">
-    <div class="row" >
+    <div class="row justify-content-center" >
       <div class="col">
         <br>
         <h2 class="display-4 text-white text-center">Contact</h2>
         <br>
-        <h3 class="text-center display-5" style="color: #FFDB58">Any questions? Feel free to ask.</h3>
-        
+        <div class="text-center display-5" 
+             style="color: #FFDB58">
+          <h3>
+            <span>Any questions?</span>
+            <span style="display: inline-flex">Feel free to ask.</span>
+          </h3> 
+        </div>
       </div>
     </div>
 
-    <div class="row text-center justify-content-center mt-3">
-      <div class="col-10 col-md-6">
+    <div class="row justify-content-center mt-3">
+      <div class="col-10 col-lg-6">
         <form
           action="https://formspree.io/f/mnqorpeb"
           method="POST"
@@ -156,7 +163,7 @@
               required 
             />
           </div>
-          <div class="form-row my-2">
+          <div class="form-row justify-content-center my-2">
             <input 
               style="background-color: hsl(240, 16%, 18%); color:white;"
               type="email" 
@@ -172,8 +179,8 @@
           </div>
           <div class="form-row mt-2 mb-5">
             <button 
-              class="form-control  text-center" 
-              style="background-color: #000028; color:#FFDB58" 
+              class="form-control  text-center text-white" 
+              style="background-color: #000028" 
               type="submit"
             >Send Message</button>  
           </div>   
@@ -184,7 +191,7 @@
 
   
   <!-- Footer -->
-  <footer style="background-color:hsl(240, 16%, 18%); padding: 1%;">
+  <footer style="background-color:hsl(240, 16%, 18%); padding: 1%">
     <p class="text-center text-white"
     >2021<span style="color:#FFDB58"> ti-co</span> &copy;
     </p>
