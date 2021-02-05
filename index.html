@@ -8,25 +8,39 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>ti-co</title>
 </head>
-
-
 
 <body style="min-height: 100%; background-size: 100%;">
   <!-- Jumbotron -->
   <div class="jumbotron jumbotron-fluid mb-0" style="background:url(./resources/v627-aew-21-technologybackground_1.jpg) no-repeat; background-size: cover; padding: 19%">
     <div id="animation" class="text-white text-center my-5">
       <h2>Welcome to my Portfolio!</h2>
-      <h1 style='font-size: large'> Hi, I'm Kristof Welslau. I'm a Web Developer.</h1>
-      <i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i>
+      <h1 style='font-size: large'> Hi, I'm <span style="color: #FFDB58">Kristof Welslau</span>. I'm a <span style="color: #FFDB58">Web Developer</span>.</h1>
+      <a href='#portfolio' style="color:white">
+        <i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i>
+      </a>
     </div> 
   </div>
   
   <!-- Navbar Component -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #000028; display:fixed; border-bottom: solid; border-bottom-color:#FFDB58">
-    <a class="navbar-brand ml-2" href="#">
-      <span style="color: #FFDB58" >ti-co</span>
+    <a class="navbar-brand ml-2" href="">
+      <span style="color: #FFDB58" >@ti-co</span>
+    </a>
+    <a class='mx-3' href="https://github.com/ti-co" target='_blank'>
+      <i 
+      class='fa fa-github' 
+      aria-hidden="true" 
+      style='font-size: 24px; color: white; background-color: #000028; padding:1%'>
+      </i>
+    </a>
+    <a class="mx-3" href="https://www.linkedin.com/in/kristof-welslau/" target="_blank">
+      <i 
+      class="fa fa-linkedin" 
+      style="font-size: 24px; color:white; background-color: #000028; padding:1%;">
+      </i>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,20 +49,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item ml-2 active">
-          <a class="nav-link" href="#">About me<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ml-2">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item ml-2">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item ml-2">
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Container -->
-  <div class="container">
+  <div id='portfolio' class="container">
     <!-- section featered projects -->
     <div class="row mt-5">
       <div class="col">
@@ -61,9 +78,11 @@
       <div class="col-10 col-md-6 mt-5">
        <!-- First card goes here -->
         <div class="card">
-          <img src="./resources/ravenous_1.jpg" class="card-img-top" alt="experienced icon">
+          <a href="https://ti-co.github.io/ravenous/" target='_blank'>
+            <img src="./resources/ravenous_1.jpg" class="card-img-top" alt="experienced icon">
+          </a>         
           <div class="card-body">
-            <p class="card-text" style="color: #000028">Discover food places with the Ravenous App. The SPA in React.JS fetches data from the Yelp API.</p>
+            <p class="card-text" style="color: #000028">Discover food places with the <a href="https://ti-co.github.io/ravenous/" target='_blank'>Ravenous app</a>. The SPA in React.JS fetches data from the Yelp API.</p>
           </div>
         </div>
       </div>
@@ -71,9 +90,11 @@
       <div class="col-10 col-md-6 mt-5">
         <!-- Second card goes here -->
         <div class="card">
-          <img src="./resources/jamming_1.jpg" class="card-img-top" alt="fun icon">
+          <a href="https://ti-co.github.io/jamming/" target='_blank'>
+            <img src="./resources/jamming_1.jpg" class="card-img-top" alt="fun icon">
+          </a>
           <div class="card-body">
-            <p class="card-text" style="color: #000028">Create Spotify playlists with Jamming App. Its React.JS components pass on information from the Spotify API.</p>
+            <p class="card-text" style="color: #000028">Create Spotify playlists with <a href="https://ti-co.github.io/jamming/" target='_blank'>Jamming app</a>. Components in React.JS pass on information from the Spotify API.</p>
           </div>
         </div>
       </div>
@@ -82,10 +103,12 @@
     <div class="row justify-content-center mb-5">  
       <div class="col-10 col-md-6 mt-5">
         <!-- Third card goes here -->
-         <div class="card">
+        <div class="card">
+          <a href="https://ti-co.github.io/practice/adhoc/" target='_blank'>
            <img src="./resources/adhoc_1.jpg" class="card-img-top" alt="experienced icon">
+          </a>
            <div class="card-body">
-             <p class="card-text" style="color: #000028">Ad-hoc offers an on-demand administrative service. I created a responsive website for them.</p>
+             <p class="card-text" style="color: #000028"><a href="https://ti-co.github.io/practice/adhoc/" target='_blank'>Ad-hoc</a>offers an on-demand administrative service. I created a responsive website for them.</p>
            </div>
          </div>
        </div>
@@ -93,9 +116,11 @@
       <div class="col-10 col-md-6 mt-5">
         <!-- Fourth card goes here -->
         <div class="card">
-          <img src="./resources/fotomatic_1.jpg" class="card-img-top" alt="experienced icon">
+          <a href="https://ti-co.github.io/practice/fotomatic/" target='_blank'>
+            <img src="./resources/fotomatic_1.jpg" class="card-img-top" alt="experienced icon">
+          </a>
           <div class="card-body">
-            <p class="card-text" style="color: #000028">For the Fotomatic Store I used CSS flexbox and lay-out to make their website responsive. </p>
+            <p class="card-text" style="color: #000028">For the <a href="https://ti-co.github.io/practice/fotomatic/" target='_blank'>Fotomatic Store</a> I used CSS flexbox and lay-out to make their website responsive. </p>
           </div>
         </div>
       </div>
@@ -104,8 +129,7 @@
   
   
   <!-- About section -->
-  
-    <div class="row justify-content-center mt-4">
+    <div id='about' class="row justify-content-center mt-4">
       <div class="col">
         <h2 class="text-center display-4" 
             style="color: hsl(240, 16%, 18%)"
@@ -113,7 +137,7 @@
       </div>
     </div>
   
-    <div class="row mt-2 justify-content-center" style='color: #000028;'>
+    <div class="row my-3 justify-content-center" style='color: #000028;'>
       <div class="col-9 col-md-6 my-3">
         <p style="text-align: justify;">
           As a developer I enjoy the logic of programming as much as the creativity of designing dynamic and intuitive user experiences.
@@ -129,7 +153,8 @@
     </div>
   </div>
 
-  <div class="container-fluid" style="background-color: #000028">
+  <!-- Contact form section -->
+  <div id='contact' class="container-fluid mt-5" style="background-color: #000028">
     <div class="row justify-content-center" >
       <div class="col">
         <br>
@@ -146,14 +171,14 @@
     </div>
 
     <div class="row justify-content-center mt-3">
-      <div class="col-10 col-lg-6">
+      <div class="col-10 col-lg-6 mb-3">
         <form
           action="https://formspree.io/f/mnqorpeb"
           method="POST"
         >
           <div class="form-row my-2">
             <input 
-              style="background-color: hsl(240, 16%, 18%); color:white;" 
+              style="background-color: hsl(240, 16%, 18%); color:white; border: hidden" 
               type="name" 
               minlength=10 
               class="form-control" 
@@ -165,7 +190,7 @@
           </div>
           <div class="form-row justify-content-center my-2">
             <input 
-              style="background-color: hsl(240, 16%, 18%); color:white;"
+              style="background-color: hsl(240, 16%, 18%); color:white; border:hidden"
               type="email" 
               class="form-control" 
               name="_replyto" 
@@ -175,12 +200,12 @@
             />
           </div>
           <div class="form-row my-2">
-            <textarea style="background-color: hsl(240, 16%, 18%); color:white;" class="form-control" placeholder="Your message" rows=6 minlength=1 maxlength=500 name="message" required></textarea>
+            <textarea style="background-color: hsl(240, 16%, 18%); color:white; border:hidden" class="form-control" placeholder="Your message" rows=6 minlength=1 maxlength=500 name="message" required></textarea>
           </div>
           <div class="form-row mt-2 mb-5">
             <button 
               class="form-control  text-center text-white" 
-              style="background-color: #000028" 
+              style="background-color: #000028; border: solid thin #FFDB58" 
               type="submit"
             >Send Message</button>  
           </div>   
@@ -191,10 +216,40 @@
 
   
   <!-- Footer -->
-  <footer style="background-color:hsl(240, 16%, 18%); padding: 1%">
-    <p class="text-center text-white"
-    >2021<span style="color:#FFDB58"> ti-co</span> &copy;
-    </p>
+  <footer 
+      class="container-fluid" 
+      style="background-color:hsl(240, 16%, 18%); padding: 1%">  
+    <br>
+    <div class="row justify-content-center">
+      <div class='col-12' style="text-align: center;">
+        <a href="https://github.com/ti-co" target="_blank">
+          <i class='fa fa-github' aria-hidden="true" 
+            style='margin: 5px; font-size: 36px; color: white; background-color: #000028; padding:1%; border:solid thin #FFDB58; border-radius: 15%'>
+          </i>
+        </a>
+        <a href="https://www.linkedin.com/in/kristof-welslau/" target="_blank" >
+          <i 
+          class="fa fa-linkedin" 
+          style="margin: 10px; font-size: 36px; color:white; background-color: #000028; padding:1%; border:solid thin #FFDB58; border-radius: 15%">
+          </i>
+        </a>
+       
+      </div>
+
+      <div class='row justify-content-center'>
+        <div class='col-12 mt-3' style="text-align: center">
+          <p class="text-white">made with ❤️ in Antwerp</p> 
+        </div>  
+      <div class='row justify-content-center'>
+        <div class='col-12' style="text-align: center">
+          <p class='text-white'>2021<span style="color:#FFDB58"> @ti-co</span> &copy;</p>  
+        </div>
+      </div>  
+         
+           
+               
+    
+
   </footer>
 
   <!-- Bootstrap's JavaScript Files -->
